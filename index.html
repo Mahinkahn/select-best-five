@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Shopping with JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="bg-black h-96 mb-8">
+        <div class="flex">
+            <div class="flex-initial  w-50 ">
+                <img src="img/Group 1.png" class="mt-10" alt="">
+            </div>
+            <div class="flex-initial w-50 mt-20 text-center">
+                <h1>Select Your Best Five</h1>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                    nostrud amet</p>
+            </div>
+        </div>
+    </header>
+
+    <br><br>
+
+    <main class="w-9/12 mx-auto mt-20 pb-20">
+        <div class="grid grid-cols-4 gap-4 divide-x">
+            <div class="col-span-3 grid grid-cols-3 gap-4">
+                <!-- product 1 -->
+                <div class="card card-compact w-full h-full bg-base-100 shadow-xl">
+                    <figure><img src="img/Frame 2.png" alt="Shoes" class="w-96 h-60" /></figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Coffee Js</h2>
+                        <p>
+                            Price: $ <span>108</span>
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- product 2 -->
+
+                <div class="card card-compact w-full h-full bg-base-100 shadow-xl">
+                    <figure><img src="img/Frame 3.png" alt="Shoes" class="w-96 h-60" /></figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Coffee Js</h2>
+                        <p>
+                            Price: $ <span>108</span>
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product 3 -->
+
+                <div class="card card-compact w-full h-full bg-base-100 shadow-xl">
+                    <figure><img src="img/Frame 4.png" alt="Shoes" class="w-96 h-60" /></figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Coffee Js</h2>
+                        <p>
+                            Price: $ <span>108</span>
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product 4 -->
+
+                <div class="card card-compact w-full h-full bg-base-100 shadow-xl">
+                    <figure><img src="img/Frame 5.png" alt="Shoes" class="w-96 h-60" /></figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Coffee Js</h2>
+                        <p>
+                            Price: $ <span>108</span>
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product 5 -->
+                <div class="card card-compact w-full h-full bg-base-100 shadow-xl">
+                    <figure><img src="img/Frame 6.png" alt="Shoes" class="w-96 h-60" /></figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Coffee Js</h2>
+                        <p>
+                            Price: $ <span>108</span>
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- product 6 -->
+                <div class="card card-compact w-full h-full bg-base-100 shadow-xl">
+                    <figure><img src="img/Frame 7.png" alt="Shoes" class="w-96 h-60" /></figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Coffee Js</h2>
+                        <p>
+                            Price: $ <span>108</span>
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CART -->
+            <div>
+                <p class="text-4xl text-center">Total added Products <span id="total-products"
+                        class="text-blue-500">0</span>
+                </p>
+                <div class="overflow-x-auto">
+                    <table class="table table-zebra w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Product Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="products-cart">
+                            <!-- <tr>
+                            <th>1</th>
+                            <td>Cy Ganderton</td>
+                            <td>Quality Control Specialist</td>
+                          </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-4xl text-center">Total added Products <span id="total-products"
+                        class="text-blue-500">0</span>
+                </p>
+                <div class="overflow-x-auto">
+                    <table class="table table-zebra w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Product Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="products-cart">
+                            <!-- <tr>
+                            <th>1</th>
+                            <td>Cy Ganderton</td>
+                            <td>Quality Control Specialist</td>
+                          </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
