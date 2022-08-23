@@ -106,59 +106,6 @@ button:focus,
     outline: none;
 }
 
-button {
-    cursor: pointer;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 30px;
-}
-
-ul li a {
-    color: #62738D;
-}
-
-ul li a:hover {
-    color: #0DB2E3;
-}
-
-ul li .active {
-    color: #0DB2E3;
-}
-
-.header-area {
-    background-color: #121C31;
-    padding-top: 15px;
-    position: relative;
-}
-
-.header-area .logo-area a {
-    font-size: 48px;
-    color: #fff;
-}
-
-
-.header-area .action-icons {
-    margin-right: 20px;
-    color: #fff;
-}
-
-.header-area .action-icons a {
-    color: #fff;
-}
-
-.header-area .action-icons a i {
-    font-size: 16px;
-    margin-left: 10px;
-}
-
 .common-btn {
     background-image: linear-gradient(to right, #0da8e8, #00b1e7, #00b9e3, #00c1de, #0dc8d7);
     color: #fff;
@@ -260,7 +207,8 @@ ul li .active {
 }
 
 .hero-section .hero-image {
-    max-width: 584px;
+    max-width: 674px;
+    margin-left: -60px;
 }
 
 /* Hero Section End */
