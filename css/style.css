@@ -12,8 +12,366 @@ body {
 
 }
 
+h1 {
+    color: #fff;
+    font-size: 72px;
+}
 
-.card-title,
-.card-text {
-    color: white;
+@media (max-width: 767.99px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+h2 {
+    color: #fff;
+    font-size: 60px;
+}
+
+@media (max-width: 575.98px) {
+    h2 {
+        font-size: 50px;
+    }
+}
+
+h3 {
+    color: #fff;
+    font-size: 48px;
+}
+
+h4 {
+    color: #fff;
+    font-size: 24px;
+}
+
+h5 {
+    color: #fff;
+    font-size: 18px;
+}
+
+h6 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+a {
+    color: #0F172A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+p {
+    color: #62738D;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus,
+.slick-slide {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+ul li a {
+    color: #62738D;
+}
+
+ul li a:hover {
+    color: #0DB2E3;
+}
+
+ul li .active {
+    color: #0DB2E3;
+}
+
+.header-area {
+    background-color: #121C31;
+    padding-top: 15px;
+    position: relative;
+}
+
+.header-area .logo-area a {
+    font-size: 48px;
+    color: #fff;
+}
+
+
+.header-area .action-icons {
+    margin-right: 20px;
+    color: #fff;
+}
+
+.header-area .action-icons a {
+    color: #fff;
+}
+
+.header-area .action-icons a i {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.common-btn {
+    background-image: linear-gradient(to right, #0da8e8, #00b1e7, #00b9e3, #00c1de, #0dc8d7);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.common-btn:hover {
+    color: #fff;
+}
+
+.scrollup:hover {
+    background: #0F172A;
+}
+
+/* Hero Section Start */
+
+.hero-section {
+    background-color: #121C31;
+    padding-top: 40px;
+}
+
+.hero-section .shape-images .shape1 {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    max-width: 550px;
+}
+
+.hero-section .shape-images .shape2 {
+    position: absolute;
+    top: 25%;
+    left: 784px;
+    max-width: 550px;
+}
+
+.hero-section .shape-images .shape3 {
+    position: absolute;
+    top: 54%;
+    left: 54%;
+    width: 23px;
+}
+
+.hero-section .shape-images .shape4 {
+    position: absolute;
+    top: 38%;
+    left: 51%;
+    width: 23px;
+}
+
+.hero-section .hero-contants span {
+    font-weight: 500;
+    display: inline-block;
+}
+
+.hero-section .hero-contants h2 {
+    margin-bottom: 20px !important;
+    color: #fff;
+    font-weight: 900;
+    line-height: 1.3em;
+}
+
+.hero-section .hero-contants h2 strong {
+    color: #0DB2E3;
+}
+
+.hero-section .hero-contants p {
+    margin-bottom: 40px;
+}
+
+.hero-section .hero-contants form {
+    display: flex;
+    position: relative;
+    max-width: 380px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.hero-section .hero-contants form ::placeholder {
+    color: #0F172A;
+}
+
+.hero-section .hero-contants form input[type="email"] {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.hero-section .hero-contants form button {
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 5%;
+    top: 14%
+}
+
+.hero-section .hero-image {
+    max-width: 584px;
+}
+
+/* Hero Section End */
+
+.players-area {
+    padding: 40px 0;
+}
+
+.players-area h3 {
+    color: #0DB2E3;
+    margin-bottom: 10px;
+}
+
+.players-area p {
+    padding-bottom: 50px;
+}
+
+.players-area .all-players img {
+    height: 200px;
+    width: 100%
+}
+
+.players-area .single-player {
+    border-radius: 15px;
+    background-color: #121C31;
+    border: 2px solid #192539;
+}
+
+.players-area .single-player .card-body {
+    padding: 0 30px;
+}
+
+.players-area .single-player .common-btn {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.players-area .single-player h4 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.players-area .single-player h4 a {
+    color: #fff;
+}
+
+.players-area .single-player .meta {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.players-area .player-image {
+    padding: 20px 20px 0 20px;
+}
+
+.players-area .player-image img {
+    border-radius: 15px;
+}
+
+/* Right Sidebar */
+
+.players-area .selectV {
+    border-radius: 15px;
+    background-color: #121C31;
+    border: 2px solid #192539;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.players-area .selectV ol li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.players-area .selectV ol li:hover {
+    color: #fff;
+}
+
+.players-area .budget {
+    border-radius: 15px;
+    background-color: #121C31;
+    border: 2px solid #192539;
+    padding: 30px;
+}
+
+.players-area .budget .input-groups {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.players-area .budget .input-groups input {
+    max-width: 110px;
+    margin: 10px;
+}
+
+.players-area .budget .exp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.players-area .budget .common-btn {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.color-primary {
+    color: #0dc8d7;
 }
