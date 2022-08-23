@@ -12,6 +12,13 @@ body {
 
 }
 
+button:disabled,
+button[disabled] {
+    background-image: linear-gradient(to right, #007991, #78ffd6);
+    color: #fff;
+    cursor: no-drop;
+}
+
 h1 {
     color: #fff;
     font-size: 72px;
@@ -116,6 +123,7 @@ button:focus,
 
 .common-btn:hover {
     color: #fff;
+
 }
 
 .scrollup:hover {

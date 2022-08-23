@@ -59,14 +59,15 @@
                                             <img src="img/Frame 2.png" class="card-img-top" alt="...">
                                         </div>
                                         <div class="card-body text-center">
-                                            <h4 class="card-title"> <a href="#">Lionel Messi</a>
+                                            <h4 class="card-title"> <a href="">Lionel Messi</a>
                                             </h4>
                                             <div class="meta">
                                                 <span>36 Goals </span>
                                                 <span><i class="fa-solid fa-clock"></i> 135 Assist</span>
                                             </div>
 
-                                            <button class="common-btn" onclick="addToList(this)">Select</button>
+                                            <button id="btn" class="common-btn"
+                                                onclick="addToList(this)">Select</button>
                                         </div>
                                     </div>
                                 </div>
@@ -84,7 +85,7 @@
                                                 <span><i class="fa-solid fa-clock"></i> 130 Assist</span>
                                             </div>
 
-                                            <a href="" class="common-btn" onclick="addToList(this)">Select</a>
+                                            <button class="common-btn" onclick="addToList(this)">Select</button>
                                         </div>
                                     </div>
                                 </div>
@@ -95,14 +96,14 @@
                                             <img src="img/Frame 4.png" class="card-img-top" alt="...">
                                         </div>
                                         <div class="card-body text-center">
-                                            <h4 class="card-title"> <a href="#">Kylian Mbappé</a>
+                                            <h4 class="card-title"> <a href="">Kylian Mbappé</a>
                                             </h4>
                                             <div class="meta">
                                                 <span>34 Goals </span>
                                                 <span><i class="fa-solid fa-clock"></i> 115 Assist</span>
                                             </div>
 
-                                            <a href="" class="common-btn" onclick="addToList(this)">Select</a>
+                                            <button class="common-btn" onclick="addToList(this)">Select</button>
                                         </div>
                                     </div>
                                 </div>
@@ -119,7 +120,7 @@
                                                 <span><i class="fa-solid fa-clock"></i> 112 Assist</span>
                                             </div>
 
-                                            <a href="" class="common-btn" onclick="addToList(this)">Select</a>
+                                            <button class="common-btn" onclick="addToList(this)">Select</button>
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +138,7 @@
                                                 <span><i class="fa-solid fa-clock"></i> 110 Assist</span>
                                             </div>
 
-                                            <a href="" class="common-btn" onclick="addToList(this)">Select</a>
+                                            <button class="common-btn" onclick="addToList(this)">Select</button>
                                         </div>
                                     </div>
                                 </div>
@@ -155,7 +156,7 @@
                                                 <span><i class="fa-solid fa-clock"></i> 100 Assist</span>
                                             </div>
 
-                                            <a href="" class="common-btn" onclick="addToList(this)">Select</a>
+                                            <button class="common-btn" onclick="addToList(this)">Select</button>
                                         </div>
                                     </div>
                                 </div>
@@ -164,7 +165,7 @@
                             </div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="selectV">
+                            <div class="selectV" style="min-height: 378px;">
                                 <h4 class="mb-4 text-center">Select - V</h4>
                                 <ol id="cartList" class="text-white"></ol>
                             </div>
@@ -176,7 +177,7 @@
                                     <span>Per Player</span>
                                     <input id="budget" type="text" value="">
                                 </div>
-                                <a href="#" class="common-btn">Calculate</a>
+                                <button class="common-btn" onclick="budget()">Calculate</button>
                                 <div class="player-exp exp my-3">
                                     <h5>Player Expenses</h5>
                                     <h5 class="color-primary">$<span id="total-budget">00</span></h5>
@@ -189,7 +190,7 @@
                                     <span>Coach</span>
                                     <input id="coach" type="text" value="">
                                 </div>
-                                <a href="#" class="common-btn">Calculate Total</a>
+                                <button class="common-btn" onclick="finalAmount()">Calculate Total</button>
                                 <div class="total-exp exp">
                                     <h5>Total Expenses</h5>
                                     <h5 class="color-primary">$<span id="final-amount">00</span></h5>
